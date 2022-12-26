@@ -93,3 +93,27 @@ console.log(increment(5));
 */
 
 //?7-Utiliza el parámetro rest con parámetros de función
+
+/*
+const sum = (...args) => {
+    return args.reduce((a, b) => a + b, 0);
+  }
+  console.log(sum(1, 2, 3)); // 6
+  console.log(sum(1, 2, 3, 8)); // 14
+  console.log(sum(8)); // 8
+*/
+
+//?8-Utiliza el operador de propagación para evaluar los arreglos en el lugar
+
+/*
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2 = Math.max(...arr1);
+
+arr2 = [...arr1];  // Cambia esta línea
+
+console.log(arr2);
+*/
+
+//?9-Usa sintaxis de desestructuración para extraer valores de objetos
+
+
