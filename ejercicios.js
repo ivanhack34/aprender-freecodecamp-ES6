@@ -114,6 +114,144 @@ arr2 = [...arr1];  // Cambia esta línea
 console.log(arr2);
 */
 
+//TODO: Ejercicio del dia 11: 27/12/2022
+
 //?9-Usa sintaxis de desestructuración para extraer valores de objetos
 
+/*
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
 
+// Cambia solo el código debajo de esta línea
+
+const {today, tomorrow} = HIGH_TEMPERATURES;
+
+// Cambia solo el código encima de esta línea
+
+console.log(HIGH_TEMPERATURES)
+*/
+
+//?10-Usa sintaxis de desestructuración para asignar variables desde objetos
+
+/*
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Cambia solo el código debajo de esta línea
+
+const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+
+// Cambia solo el código encima de esta línea
+
+console.log(HIGH_TEMPERATURES);
+*/
+
+//?11-Usa sintaxis de desestructuración para asignar variables desde objetos anidados
+
+/*
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+// Cambia solo el código debajo de esta línea
+
+const {today: {low: lowToday, high: highToday}} = LOCAL_FORECAST;
+
+// Cambia solo el código encima de esta línea
+
+console.log(LOCAL_FORECAST);
+*/
+
+//?12-Usa sintaxis de desestructuración para asignar variables desde arreglos
+
+/*
+let a = 8, b = 6;
+// Cambia solo el código debajo de esta línea
+[a,b] = [b,a]
+
+console.log([a,b]);
+console.log([b,a]);
+*/
+
+//?13-Utiliza la sintaxis de desestructuración con el parámetro rest para reasignar elementos de un arreglo
+
+/*
+function removeFirstTwo(list) {
+  // Cambia solo el código debajo de esta línea
+  const [a,b,...shorterList] = list; // Cambia esta línea
+  // Cambia solo el código encima de esta línea
+  return shorterList;
+}
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sourceWithoutFirstTwo = removeFirstTwo(source);
+
+console.log(removeFirstTwo(source));
+*/
+
+//?14-Utiliza sintaxis de desestructuración para pasar un objeto como parámetro de función
+
+/*
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+// Cambia solo el código debajo de esta línea
+const half = ({ max, min }) => (max + min) / 2.0;
+// Cambia solo el código encima de esta línea
+*/
+
+//?15-Crea cadenas usando plantillas literales
+
+/*
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arr) {
+  // Cambia solo el código debajo de esta línea
+  const failureItems = [];
+  for (let i = 0; i < arr.length; i++) {
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
+  // Cambia solo el código encima de esta línea
+
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+
+console.log(failuresList)
+*/
+
+//?16-Escribe declaraciones concisas de objecto literales usando la abreviatura de propiedad de objeto
+
+/*
+const createPerson = (name, age, gender) => {
+  // Cambia solo el código debajo de esta línea
+   return {
+    name,
+    age,
+    gender
+  };
+  // Cambia solo el código encima de esta línea
+};
+
+console.log(createPerson());
+*/
+
+//?17-Escribe funciones breves y declarativas con ES6
