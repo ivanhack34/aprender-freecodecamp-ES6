@@ -254,4 +254,190 @@ const createPerson = (name, age, gender) => {
 console.log(createPerson());
 */
 
+//Todo: Ejercicio del dia 12: 28/12/2022
+
 //?17-Escribe funciones breves y declarativas con ES6
+
+/*
+// Cambia solo el código debajo de esta línea
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// Cambia solo el código encima de esta línea
+bicycle.setGear(3);
+console.log(bicycle.gear);
+*/
+
+//?18-Usa sintaxis de clases para definir una función constructora
+
+/*
+// Cambia solo el código debajo de esta línea
+class Vegetable{
+  constructor(name){
+    this.name = name;
+  }} 
+// Cambia solo el código encima de esta línea
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Debería mostrar 'carrot'
+*/
+
+//?19-Utiliza getters (accesores) y setters (mutadores) para controlar el acceso a un objeto
+
+/*
+// Cambia solo el código debajo de esta línea
+class Thermostat {
+  constructor(fahrenheit) {
+    this.fahrenheit = fahrenheit;
+  }
+  
+  get temperature() {
+    return (5 / 9) * (this.fahrenheit - 32);
+  }
+  
+  set temperature(celsius) {
+    this.fahrenheit = (celsius * 9.0) / 5 + 32;
+  }
+}
+// Cambia solo el código encima de esta línea
+
+const thermos = new Thermostat(76); // Ajuste en escala Farenheit
+let temp = thermos.temperature; // 24.44 en Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 en Celsius
+
+console.log(temp);
+*/
+
+//?20-Crea un módulo para scripts
+
+/*
+<html>
+  <body>
+    <!-- Cambia solo el código debajo de esta línea -->
+      <script type="module" src="index.js"></script>
+    <!-- Cambia solo el código encima de esta línea -->
+  </body>
+</html>
+*/
+
+//?21-Utiliza la exportación para compartir un bloque de código
+
+/*
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export {uppercaseString, lowercaseString}; //Respuesta
+*/
+
+//?22-Reutiliza código de JavaScript utilizando import
+
+/*
+import {uppercaseString, lowercaseString} from './string_functions.js'; //Respuesta
+// Cambia solo el código encima de esta línea
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+*/
+
+//?23-Use * para importar todo de un archivo
+
+/*
+import * as stringFunctions  from './string_functions.js' //Respuesta
+// Cambia solo el código encima de esta línea
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+*/
+
+//?24-Crear un fallback de exportación con export default
+
+/*
+export default function subtract(x, y) { //Respuesta
+  return x - y;
+}
+*/
+
+//?25-Importa una exportación por defecto
+
+/*
+import subtract from "./math_functions.js"; //Respuesta
+// Cambia solo el código encima de esta línea
+
+subtract(7,4);
+*/
+
+//?26-Crea una promesa de JavaScript
+
+/*
+const makeServerRequest = new Promise((resolve, reject)=> {
+
+});
+*/
+
+//?27-Cumpleta una promesa con "resolve" y "reject"
+
+/*
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer representa una respuesta de un servidor
+  let responseFromServer;
+
+  if(responseFromServer) {
+    resolve("We got the data"); //Respuestas
+  } else {  
+    reject("Data not received"); //Respuestas
+  }
+});
+*/
+
+//?28-Maneja una promesa cumplida usando then
+
+/*
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer es establecido a true para representar una respuesta satisfactoria del servidor
+  let responseFromServer = true;
+
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+*/
+
+//?29-Maneja una promesa rechazada usando catch
+/*
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer es establecido a false para representar una respuesta no satisfactoria del servidor
+  let responseFromServer = false;
+
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+
+
+makeServerRequest.catch(error => { //Respuesta
+  console.log(error); 
+}); 
+*/
+
+
